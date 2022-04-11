@@ -11,6 +11,43 @@
     <link rel="stylesheet" href="./css/stayles.css">
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <section class="site-header">
+            <div class="site-header-container container">
+                <h1 class="site-header-heading">
+                    <a class="site-header-link" href="#">Where in the world?</a>
+                </h1>
+                <button class="button" type="submit">Dark Mode</button>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="container">
+            <!-- SEARCH -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <input class="search-form-input" type="search" name="search" required placeholder="Search for a country…" aria-label="Search for a country…">
+
+            <div class="search-form-region">
+                <div class="search-form-region-top">
+                    <label class="search-form-region-label" for="region">Filter by Region</label>
+                <button class="search-form-region-button">
+                    <img class="search-form-region-img" src="./img/shape.svg" alt="shape" width="9" height="5">
+                </button>
+                </div>
+                <div class="search-form-region-bottom">
+                    <label class="search-form-region-bottom-label" for="Afrika">Africa </label>
+                    <label class="search-form-region-bottom-label" for="America">America</label>
+                    <label class="search-form-region-bottom-label" for="Asia">Asia</label>
+                    <label class="search-form-region-bottom-label" for="Europe">Europe</label>
+                    <label class="search-form-region-bottom-label" for="Oceania">Oceania</label>
+                </div>
+            </div>
+        </form>
+        </div>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
