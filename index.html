@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Rest-Countries</title>
 
     <!-- STAYLESHEETS -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/stayles.css">
 </head>
-<body>
+<body class="">
     <!-- HEADER -->
     <header class="header">
         <section class="site-header">
@@ -28,25 +28,15 @@
         <div class="container">
             <!-- SEARCH -->
         <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <input class="search-form-input" type="search" name="search" required placeholder="Search for a country…" aria-label="Search for a country…">
+            <input class="search-form-input" type="search" name="search" required placeholder="Search for a country…">
 
-            <div class="search-form-region">
-                <div class="search-form-region-top">
-                    <label class="search-form-region-label" for="region">Filter by Region</label>
-                <button class="search-form-region-button">
-                    <img class="search-form-region-img" src="./img/shape.svg" alt="shape" width="9" height="5">
-                </button>
-                </div>
-                <div class="search-form-region-bottom">
-                    <a class="search-from-region-link" href="#"><label class="search-form-region-bottom-label" for="Afrika">Africa </label></a>
-                    <a class="search-from-region-link" href=""><label class="search-form-region-bottom-label" for="America">America</label></a>
-                    <a class="search-from-region-link" href=""><label class="search-form-region-bottom-label" for="Asia">Asia</label>
-                    </a>
-                    <a class="search-from-region-link" href=""><label class="search-form-region-bottom-label" for="Europe">Europe</label>
-                    </a>
-                    <a class="search-from-region-link" href=""><label class="search-form-region-bottom-label" for="Oceania">Oceania</label></a>
-                </div>
-            </div>
+            <select class="form-select" name="region" id="hudud">
+                <option class="form-option" value="0">Filter by Region</option>
+                <option class="form-option" value="1">Africa</option>
+                <option class="form-option" value="2">America</option>
+                <option class="form-option" value="3">Asia</option>
+                <option class="form-option" value="4">Oceania</option>
+            </select>
         </form>
 
         <!-- REGIONS -->
@@ -56,7 +46,7 @@
                     <img class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">Germany</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
@@ -74,56 +64,56 @@
                 </li>
 
                 <li class="regions-item">
-                    <img class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
+                    <img class="regions-img" src="./img/flag-usa.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">United States of America</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
-                            <p class="regions-item-text">81,770,900</p>
+                            <p class="regions-item-text">323,947,000</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Region:</h4>
-                            <p class="regions-item-text">Europe</p>
+                            <p class="regions-item-text">Americas</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Capital:</h4>
-                            <p class="regions-item-text">Berlin</p>
+                            <p class="regions-item-text">Washington, D.C.</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="regions-item">
-                    <img class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
+                    <img class="regions-img" src="./img/flag-brazil.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">Brazil</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
-                            <p class="regions-item-text">81,770,900</p>
+                            <p class="regions-item-text">206,135,893</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Region:</h4>
-                            <p class="regions-item-text">Europe</p>
+                            <p class="regions-item-text">Americas</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Capital:</h4>
-                            <p class="regions-item-text">Berlin</p>
+                            <p class="regions-item-text">Brasilia</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="regions-item">
-                    <img class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
+                    <img class="regions-img" src="./img/flag_of_iceland.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">Iceland</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
-                            <p class="regions-item-text">81,770,900</p>
+                            <p class="regions-item-text">334,300</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Region:</h4>
@@ -131,41 +121,41 @@
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Capital:</h4>
-                            <p class="regions-item-text">Berlin</p>
+                            <p class="regions-item-text">Reykjavík</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="regions-item">
-                    <img  class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
+                    <img  class="regions-img" src="./img/flag_of_afghanistan.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">Afghanistan</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
-                            <p class="regions-item-text">81,770,900</p>
+                            <p class="regions-item-text">27,657,145</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Region:</h4>
-                            <p class="regions-item-text">Europe</p>
+                            <p class="regions-item-text">Asia</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Capital:</h4>
-                            <p class="regions-item-text">Berlin</p>
+                            <p class="regions-item-text">Kabul</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="regions-item">
-                    <img class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
+                    <img class="regions-img" src="./img/flag_of_aland Islands.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">Åland Islands</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
-                            <p class="regions-item-text">81,770,900</p>
+                            <p class="regions-item-text">28,875</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Region:</h4>
@@ -173,20 +163,20 @@
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Capital:</h4>
-                            <p class="regions-item-text">Berlin</p>
+                            <p class="regions-item-text">Mariehamn</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="regions-item">
-                    <img class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
+                    <img class="regions-img" src="./img/flag_of_albania.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">Albania</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
-                            <p class="regions-item-text">81,770,900</p>
+                            <p class="regions-item-text">2,886,026</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Region:</h4>
@@ -194,28 +184,28 @@
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Capital:</h4>
-                            <p class="regions-item-text">Berlin</p>
+                            <p class="regions-item-text">Tirana</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="regions-item">
-                    <img class="regions-img" src="./img/flag_of_germany.svg" alt="flag_of_germany">
+                    <img class="regions-img" src="./img/flag_of_algeria.svg" alt="flag_of_germany">
                     <div class="regions-content">
                         <h3 class="regions-content-heading">
-                            <a class="regions-content-link" href="#">Germany</a>
+                            <a class="regions-content-link" href="main.html">Algeria</a>
                         </h3>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Population:</h4>
-                            <p class="regions-item-text">81,770,900</p>
+                            <p class="regions-item-text">40,400,000</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Region:</h4>
-                            <p class="regions-item-text">Europe</p>
+                            <p class="regions-item-text">Africa</p>
                         </div>
                         <div class="regions-item-content">
                             <h4 class="regions-item-heading">Capital:</h4>
-                            <p class="regions-item-text">Berlin</p>
+                            <p class="regions-item-text">Algiers</p>
                         </div>
                     </div>
                 </li>
