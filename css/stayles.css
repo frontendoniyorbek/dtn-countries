@@ -4,7 +4,6 @@
     --search-color:#848484;
     --color-bg:#f2f2f2;
     --color-bg-white:#fff;
-    --color-label:#000;
 }
 
 .dark-mode{
@@ -12,7 +11,6 @@
     --color-bg:#202c36;
     --primary-color:#fff;
     --search-color:#fff;
-    --color-label:#fff;
 }
 
 /* FONTS */
@@ -73,26 +71,6 @@ img{
     height: auto;
 }
 
-.button {
-    display: inline-block;
-    background-color: var(--color-bg-white);
-    border: 0;
-    color: #111517;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 0;
-    margin: 0;
-    min-width: 80px;
-    background-image: url(../img/month-icon.svg);
-    background-repeat: no-repeat;
-    background-size: 15px 14px;
-    background-position: left center;
-    padding-left: 25px;
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
 
 /* CONTAINER */
 .container{
@@ -117,26 +95,6 @@ img{
     padding-bottom: 35px;
 }
 
-.button-back{
-    display: flex;
-    align-items: center;
-    width: 136px;
-    padding: 10px 39px 10px 32px;
-    margin-bottom: 80px;
-    background-color: var(--color-bg-white);
-    color: var(--primary-color);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
-    border-radius: 6px;
-    text-decoration: none;
-}
-
-.button-back-text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 11px;
-}
-
 
 /* HEADER */
 .header {
@@ -149,12 +107,6 @@ img{
     justify-content: space-between;
 }
 
-.site-header-heading {
-    margin: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
 .site-header-link {
     display: inline-block;
     text-decoration: none;
@@ -162,6 +114,47 @@ img{
     font-weight: 800;
     font-size: 24px;
     line-height: 33px;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: opacity 0.4s ease;
+}
+
+.site-header-link:hover{
+    opacity: 0.8;
+}
+
+.site-header-link:active{
+    opacity: 0.6;
+}
+
+.site-header-theme-toggler {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+.site-header-theme-toggler :hover{
+    opacity: 0.8;
+}
+
+.site-header-theme-toggler :active{
+    opacity: 0.6;
+}
+
+.site-header-theme-toggler-inner {
+    display: flex;
+    align-items: center;
+}
+
+.site-header-theme-toggler-text {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--primary-color);
 }
 
 

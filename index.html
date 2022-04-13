@@ -15,10 +15,13 @@
     <header class="header">
         <section class="site-header">
             <div class="site-header-container container">
-                <h1 class="site-header-heading">
-                    <a class="site-header-link" href="#">Where in the world?</a>
-                </h1>
-                <button class="button" type="submit">Dark Mode</button>
+                <a class="site-header-link" href="index.html">Where in the world?</a>
+                <button class="site-header-theme-toggler" type="button">
+                    <span class="site-header-theme-toggler-inner">
+                        <img class="site-header-theme-toggler-img" src="./img/month-icon.svg" alt="manth" width="20" height="20">
+                        <span class="site-header-theme-toggler-text">Dark Mode</span>
+                    </span>
+                </button>
             </div>
         </section>
     </header>
@@ -28,10 +31,10 @@
         <div class="container">
             <!-- SEARCH -->
         <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <input class="search-form-input" type="search" name="search" required placeholder="Search for a country…">
+            <input class="search-form-input" type="search" name="search" required placeholder="Search for a country…" aria-label="Search for a country…">
 
             <select class="form-select" name="region" id="hudud">
-                <option class="form-option" value="0">Filter by Region</option>
+                <option class="form-option" value="0" disabled selected>Filter by Region</option>
                 <option class="form-option" value="1">Africa</option>
                 <option class="form-option" value="2">America</option>
                 <option class="form-option" value="3">Asia</option>
