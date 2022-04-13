@@ -4,6 +4,7 @@
     --search-color:#848484;
     --color-bg:#f2f2f2;
     --color-bg-white:#fff;
+    --transition-duration:0.4s;
 }
 
 .dark-mode{
@@ -64,6 +65,8 @@ body{
     font-family:"Nunito Sans", "Arial",sans-serif;
     background-color: var(--color-bg-white);
     color: #111517;
+    transition: background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
 }
 
 img{
@@ -90,9 +93,8 @@ img{
     background-color: var(--color-bg);
 }
 
-.main-container{
-    padding-top: 35px;
-    padding-bottom: 35px;
+.main-content-inner{
+    padding-top: 80px;
 }
 
 
@@ -117,7 +119,7 @@ img{
     margin: 0;
     padding-top: 24px;
     padding-bottom: 24px;
-    transition: opacity 0.4s ease;
+    transition: opacity var(--transition-duration) ease;
 }
 
 .site-header-link:hover{
@@ -133,7 +135,7 @@ img{
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    transition: opacity 0.4s ease;
+    transition: opacity var(--transition-duration) ease;
 }
 
 .site-header-theme-toggler :hover{
@@ -185,6 +187,19 @@ img{
     margin-right: 10px;
 }
 
+::-webkit-input-placeholder {
+    color: var(--search-color);
+}
+    ::-moz-placeholder {
+    color: var(--search-color);
+}
+    :-ms-input-placeholder {
+    color: var(--search-color);
+}
+    :-moz-placeholder {
+    color: var(--search-color);
+}
+
 .form-select {
     padding: 18px 26px 18px 24px;
     border: 0;
@@ -227,7 +242,7 @@ img{
     width: 263px;
     height: 160px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 
 .regions-content {
@@ -266,4 +281,141 @@ img{
     color: var(--primary-color);
     margin-top: 0;
     margin-bottom: 8px;
+}
+
+
+/* COUNRTY-PAGE */
+.country-page-back-wrapper {
+    margin-bottom: 80px;
+}
+
+.country-page-back-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 40px;
+    border-radius: 6px;
+    background-color: var(--color-bg-white);
+    color: var(--primary-color);
+    text-decoration: none;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+}
+
+.country-page-back-link:hover{
+    opacity: 0.8;
+}
+
+.country-page-back-link:active{
+    opacity: 0.6;
+}
+
+.country-page-back-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.country-page-back-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.country-page-flag-info{
+    display: flex;
+}
+
+.country-page-flag{
+    width: 560px;
+    height: 400px;
+    margin-right: 120px;
+    object-fit: cover;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+}
+
+.country-page-info {
+    width: 600px;
+    padding-top: 40px;
+}
+
+.country-page-title{
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 800;
+}
+
+.country-page-dls-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.country-pag-detalist {
+    width: 250px;
+}
+
+.counrty-pag-datalist-item{
+    display: flex;
+}
+
+.counrty-pag-datalist-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.counrty-pag-datalist-title {
+    margin-right: 4px;
+    font-weight: 600;
+}
+
+.counrty-pag-datalist-value {
+    margin: 0;
+    font-weight: 300;
+}
+
+.country-page-border-countries {
+    display: flex;
+    align-items: center;
+}
+
+.country-page-border-countries-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.country-page-border-countries-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.country-page-border-countries-link {
+    min-width: 96px;
+    padding: 5px 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: var(--color-bg-white);
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+}
+
+.country-page-border-countries-link:not(:last-child){
+    margin-right: 10px;
+}
+
+.country-page-border-countries-link:hover{
+    opacity: 0.8;
+}
+
+.country-page-border-countries-link:active{
+    opacity: 0.6;
 }
