@@ -108,6 +108,7 @@ img{
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: var(--color-bg-white);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
 }
 
 .site-header-container{
@@ -165,6 +166,7 @@ img{
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+    text-transform: capitalize;
 }
 
 
@@ -285,6 +287,8 @@ img{
 
 .regions-item-heading {
     margin:0;
+    font-size: 14px;
+    line-height: 16px;
     color: var(--primary-color);
 }
 
