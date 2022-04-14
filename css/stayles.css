@@ -118,6 +118,7 @@ img{
 
 .site-header-link {
     display: inline-block;
+    flex-shrink: 0;
     text-decoration: none;
     color:var(--primary-color);
     font-weight: 800;
@@ -138,6 +139,8 @@ img{
 .site-header-theme-toggler {
     padding: 0;
     border: 0;
+    flex-shrink: 0;
+    padding-left: 10px;
     background-color: transparent;
     cursor: pointer;
     color: var(--primary-color);
@@ -276,16 +279,18 @@ img{
     align-items: center;
 }
 
-.regions-item-heading {
-    margin-top: 0;
+.regions-item-content:not(:last-child){
     margin-bottom: 8px;
+}
+
+.regions-item-heading {
+    margin:0;
     color: var(--primary-color);
 }
 
 .regions-item-text {
     color: var(--primary-color);
-    margin-top: 0;
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 
