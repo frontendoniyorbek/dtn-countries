@@ -369,12 +369,17 @@ img{
 .counrty-pag-datalist-title {
     margin-right: 4px;
     font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
     color: var(--primary-color);
 }
 
 .counrty-pag-datalist-value {
     margin: 0;
     font-weight: 300;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
     color:var(--primary-color);
 }
 
