@@ -69,6 +69,11 @@ body{
     color var(--transition-duration) ease;
 }
 
+*:focus{
+    outline: 2px dotted var(--primary-color);
+    outline-offset: 3px;
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -100,6 +105,8 @@ img{
 
 /* HEADER */
 .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: var(--color-bg-white);
 }
 
@@ -117,8 +124,6 @@ img{
     font-size: 24px;
     line-height: 33px;
     margin: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
     transition: opacity var(--transition-duration) ease;
 }
 
