@@ -152,7 +152,7 @@ img{
     opacity: 0.8;
 }
 
-.site-header-theme-toggler :active{
+.site-header__theme-toggler :active{
     opacity: 0.6;
 }
 
@@ -182,7 +182,7 @@ img{
     position: relative;
 }
 
-.filters-search-icon{
+.filters-search__icon{
     position: absolute;
     left: 32px;
     top: 19px;
@@ -190,7 +190,7 @@ img{
     pointer-events: none;
 }
 
-.search-form-input {
+.search-form__input {
     padding-top: 19px;
     padding-bottom: 19px;
     padding-left: 74px;
@@ -219,7 +219,7 @@ img{
     color: var(--search-color);
 }
 
-.form-select {
+.form__select {
     padding: 18px 26px 18px 24px;
     border: 0;
     background-color: var(--color-bg-white);
@@ -227,7 +227,7 @@ img{
     border-radius: 5px;
 }
 
-.form-option {
+.form__option {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
