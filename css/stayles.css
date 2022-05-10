@@ -234,8 +234,8 @@ img{
     color: var(--primary-color);
 }
 
-/* REGIONS */
-.regions-list {
+/* REGIONS*/
+.regions__list {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -245,7 +245,7 @@ img{
     list-style: none;
 }
 
-.regions-item{
+.regions__item{
     width: 263px;
     display: flex;
     flex-direction: column;
@@ -256,7 +256,7 @@ img{
     border-radius: 5px;
 }
 
-.regions-img {
+.regions__img {
     display: inline-block;
     width: 263px;
     height: 160px;
@@ -264,13 +264,13 @@ img{
     border-radius: 5px 5px 0 0;
 }
 
-.regions-content {
+.regions__content {
     padding-left: 24px;
     padding-top: 24px;
     padding-bottom: 46px;
 }
 
-.regions-content-heading {
+.regions__content-heading {
     margin: 0;
     margin-bottom: 16px;
     font-weight: 800;
@@ -278,30 +278,30 @@ img{
     line-height: 26px;
 }
 
-.regions-content-link {
+.regions__content-link {
     display: inline-block;
     text-decoration: none;
     color: var(--primary-color);
     cursor: pointer;
 }
 
-.regions-item-content {
+.regions__item-content {
     display: flex;
     align-items: center;
 }
 
-.regions-item-content:not(:last-child){
+.regions__item-content:not(:last-child){
     margin-bottom: 8px;
 }
 
-.regions-item-heading {
+.regions__item-heading {
     margin:0;
     font-size: 14px;
     line-height: 16px;
     color: var(--primary-color);
 }
 
-.regions-item-text {
+.regions__item-text {
     color: var(--primary-color);
     margin: 0;
 }
